@@ -1,0 +1,107 @@
+docker pull ubuntu
+   56  ls
+   57  docker images
+   58  docker pull devopswithcloudhub/i27eurekaproject:2325f89
+   59  docker images
+   60  docker tag devopswithcloudhub/i27eurekaproject anuazure
+   61  docker tag devopswithcloudhub/i27eurekaproject anuazure/eureka:v1.0
+   62  docker tag i27eurekaproject anuazure/eureka:v1.0
+   63  docker tag acopy anuazure/eureka:v2
+   64  docker login
+   65  docker images
+   66  docker push devopswithcloudhub/i27eurekaproject:2325f89 
+   67  docker push anu:v2 
+   68  history
+   69  docker push anu/anuazure:v2 
+   70  docker login registry-1.docker.io -u anuazure
+   71  ls
+   72  docker images
+   73  docker push devopswithcloudhub/i27eurekaproject:v3
+   74  ls
+   75  mkdir Dockerfiles
+   76  cd Dockerfiles/
+   77  ls
+   78  touch Dockerfile
+   79  vim Dockerfile
+   80  docker images
+   81  ls
+   82  docker build -t anuazure/ubanu1 .
+   83  vi Dockerfile 
+   84  docker build -t anuazure/ubanu1 .
+   85  docker images
+   86  docker run -dt --name ubanu1 -p 8081:80 anuazure/ubanu1
+   87  docker ps -a
+   88  mkdir Docker
+   89  rm Docker
+   90  rm -rf Docker
+   91  ls
+   92  mkdir ubuntu
+   93  ls
+   94  cd ubuntu
+   95  vi Dockerfile
+   96  history
+   97  docker build -t anuazure/sampleub .
+   98  docker images
+   99  docker run -dt --name sampleub -p 8083:80 anuazure/sampleub
+  100  vi Dockerfile 
+  101  docker build -t anuazure/sampleub2 .
+  102  docker images
+  103  docker run -dt --name sampleub2 -p 8083:80 anuazure/sampleub2
+  104  docker images
+  105  docker ps
+  106  ifconfig
+  107  ipconfig
+  108  apt intall iputils -ping wget curl net-tools-y
+  109  sudo apt intall iputils -ping wget curl net-tools-y
+  110  ping
+  111  sudo ping
+  112  sudo apt install iputils-ping wget curl net-tools -y
+  113  ifconfig
+  114  grep | 34.125.66.202
+  115  grep -nr "34.125.66.202"
+  116  ifconfig
+  117  ls
+  118  sudo ifup -a
+  119  clear
+  120  docker ps
+  121  ls
+  122  cd ..
+  123  ls
+  124  mkdir ubuntuwelcome
+  125  cd ubuntuwelcome/
+  126  cd
+  127  cd Dockerfiles/
+  128  ls
+  129  cd ubuntu\
+  130  ls
+  131  cd ubuntu
+  132  ls
+  133  vi Dockerfile 
+  134  cd ..
+  135  cd ubuntuwelcome/
+  136  vi Dockerfile
+  137  cat Dockerfile 
+  138  touch index.html
+  139  ls
+  140  docker build -t anuazure/welcomeub1 .
+  141  docker ps
+  142  docker images
+  143  ls
+  144  vi index.html 
+  145  docker build -t anuazure/welcomeub2 .
+  146  docker images
+  147  history
+  148  docker run -d --name welcomeub2 -p 8085:80 anuazure/welcomeub2
+  149  docker ps
+  150  vi Dockerfile 
+  151  cd
+  152  docker images
+  153  docker ps -a
+  154  docker tag anuazure/welcomeub2 anuazure/welcomeub2:v5
+  155  docker tag
+  156  docker ps -a
+  157  docker images
+  158  docker tag anuazure/sampleub2 anuazure/sampleub2:v6
+  159  docker push anuazure/sampleub2:v6
+  160  docker push anuazure/welcomeub2:v5
+  161  history
